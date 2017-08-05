@@ -1,0 +1,38 @@
+header.masthead {
+    background-image: url("../img/pineapple-supply-co-142106.jpg");
+}
+
+section#contact {
+    background-color: transparent;
+    background-image: url(../img/pineapple-supply-co-142108.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#portfolio {
+    background-image: url("../img/pineapple-supply-co-124390.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.contact-invite {
+    color: #ffffff !important;
+}
+
+.portfolio-link {
+    background-color: #464C49;
+}
+
+.portfolio-img {
+    padding-left: 8%;
+}
+
+.favicon-credit {
+    font-size: 90%;
+    color: #fed136;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
