@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Playlist Script';
+  src: url("./PlaylistFF/Playlist Script.otf");
+}
+
 header.masthead {
     background-image: url("../img/pineapple-supply-co-142106.jpg");
 }
@@ -24,15 +29,43 @@ section#portfolio {
     background-color: #464C49;
 }
 
+.inline-link {
+  color: #464C49;
+}
+
 .portfolio-img {
     padding-left: 8%;
 }
 
 .favicon-credit {
-    font-size: 90%;
-    color: #fed136;
+  font-size: 90%;
+  color: #fed136;
 }
 
 .navbar-default .navbar-nav>li>a {
   color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a.email-me {
+  color: #fed136;
+}
+
+.navbar-custom .navbar-brand {
+  font-family: 'Playlist Script', Helvetica, Arial, cursive;
+  font-size: 2em;
+}
+
+.navbar-custom.affix .navbar-brand {
+  font-size: 2em;
+}
+
+section h2.section-heading {
+  font-family: 'Playlist Script', Helvetica, Arial, cursive;
+  font-size: 5em;
+  text-transform: none;
+  margin-bottom: 36px;
+}
+
+a.page-scroll{
+  font-size: 0.8em;
 }

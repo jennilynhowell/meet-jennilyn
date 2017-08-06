@@ -75,7 +75,7 @@
                         <a class="page-scroll" href="#team">ABOUT</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">CONTACT</a>
+                        <a class="page-scroll email-me" href="mailto:jennilynhowell@me.com?subject=Hey%20Jennilyn,%20I%20was%20on%20your%20portfolio%20site">EMAIL ME</a>
                     </li>
                 </ul>
             </div>
@@ -90,7 +90,7 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Welcome to Jennilyn's Development Studio</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
+                <div class="intro-heading">Nice to meet you!</div>
                 <a href="#portfolio" class="btn btn-xl">My Work</a>
             </div>
         </div>
@@ -128,7 +128,7 @@
                         <i class="fa fa-hashtag fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">HTML and CSS</h4>
-                    <p class="text-muted">Solid HTML, CSS, and Bootstrap skills, with exposure to Sass and JQuery.</p>
+                    <p class="text-muted">Strong HTML, CSS, and Bootstrap skills, with exposure to Sass and JQuery.</p>
                 </div>
             </div>
             <div class="row text-center">
@@ -137,7 +137,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-database fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">MongoDB and PostgreSQL</h4>
+                    <h4 class="service-heading">Database</h4>
                     <p class="text-muted">Experience building apps using Mongoose, Sequelize, and JPA. Not scared of migrations!</p>
                 </div>
                 <div class="col-md-4">
@@ -171,20 +171,96 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item" th:each="project: ${projects}">
-                    <div class="portfolio-link" data-toggle="modal" th:href="'#portfolioModal' + ${project.id}">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid portfolio-img" th:src="${project.thumbnailUrl}" alt=""/>
+                        <img class="img-fluid portfolio-img" src="assets/img/portfolio/Gabble2.png" alt=""/>
                     </div>
                     <div class="portfolio-caption">
-                        <h4 th:text="${project.title}"></h4>
-                        <p class="text-muted" th:text="${project.subheader}"></p>
+                        <h4>Gabble</h4>
+                        <p class="text-muted">pseudo-twitter</p>
                     </div>
-                </div>
+                </div> <!--- end project box --->
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="assets/img/portfolio/Songbird2.png" alt=""/>
+                    </div>
+                    <div class="portfolio-caption">
+                        <h4>Songbird</h4>
+                        <p class="text-muted">search for and play a song</p>
+                    </div>
+                </div> <!--- end project box --->
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="assets/img/portfolio/CodeTrapper3b.png" alt=""/>
+                    </div>
+                    <div class="portfolio-caption">
+                        <h4>CodeTrapper</h4>
+                        <p class="text-muted">store your code snippets</p>
+                    </div>
+                </div> <!--- end project box --->
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="assets/img/portfolio/atm-thumb.png" alt=""/>
+                    </div>
+                    <div class="portfolio-caption">
+                        <h4>PantherBank</h4>
+                        <p class="text-muted">java atm app</p>
+                    </div>
+                </div> <!--- end project box --->
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="assets/img/portfolio/MysteryWord2.png" alt=""/>
+                    </div>
+                    <div class="portfolio-caption">
+                        <h4>Mystery Word</h4>
+                        <p class="text-muted">hangman-style game</p>
+                    </div>
+                </div> <!--- end project box --->
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="assets/img/portfolio/gh-thumb.png" alt=""/>
+                    </div>
+                    <div class="portfolio-caption">
+                        <h4>GitHub Remixed</h4>
+                        <p class="text-muted">recreation of my gh profile</p>
+                    </div>
+                </div> <!--- end project box --->
+
             </div> <!--- end project div --->
         </div>
     </section>
@@ -195,7 +271,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Resume</h2>
-                    <h3 class="section-subheading text-muted">a tldr version</h3>
+                    <h3 class="section-subheading text-muted">relevant experience</h3>
                 </div>
             </div>
             <div class="row">
@@ -212,7 +288,8 @@
                                     <h4 class="subheading">Boutique Retail Leadership</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Grew sales, engaged teammembers, cultivated unique shopping experiences for clients.</p>
+                                    <p><i>Client-focused sales and successful team leadership.</i></p>
+                                    <p class="text-muted">Team cheerleader at two metro-DC area cosmetics store locations. Promoted from full-time sales to store manager in under 2 years.</p>
                                 </div>
                             </div>
                         </li>
@@ -224,10 +301,11 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>2015-2017</h4>
-                                    <h4 class="subheading">E-Marketing Leadership</h4>
+                                    <h4 class="subheading">Lead Account Manager</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Effective client and team engager. Managed a major development project which inspired my interest programming.</p>
+                                    <p><i>Superuser of a custom email marketing platform. Client advocate and team cheerleader.</i></p>
+                                    <p class="text-muted">Cultivated client experience and team engagement. Became in-house expert on our software platform and oversaw a major development addition in 2016. This inspired me to learn programming!</p>
                                 </div>
                             </div>
                         </li>
@@ -239,10 +317,11 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Summer 2017</h4>
-                                    <h4 class="subheading">Career Transition</h4>
+                                    <h4 class="subheading">The Iron Yard</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Successfully completed an intensive coding education program.</p>
+                                    <p><i>The Iron Yard is a 12-week coding bootcamp specializing in highly-focused, immersive training centered on language fluency, OOP, and project-based learning.</i></p>
+                                    <p class="text-muted">Successfully completed the Web-Development Career Path, a full-stack program. During the last third of my training I concentrated on Java development using Spring.</p>
                                 </div>
                             </div>
                         </li>
@@ -294,8 +373,8 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <p class="large text-muted">I'm Jennilyn, a web developer from beautiful Greenville, SC. I love programming, laughing, drinking coffee, and playing with dogs.</p>
-                    <p class="text-muted">Thanks to a crossword-crazy granny (Hi Grandma!) I grew up loving puzzles, the strategy involved in tackling them, and the excitement when you finally fill in the last letter or place the last pesky piece. Programming excites me in the same way. Never will I run out of things to learn or puzzles to solve.</p>
-                    <p class="text-muted">Feel free to contact me if I can support your business, whether as a developer or contractor. I look forward to hearing from you!</p>
+                    <p class="large text-muted">Thanks to a crossword-crazy granny I grew up loving puzzles, the strategy involved in tackling them, and the excitement when you finally fill in the last letter or place the last pesky piece. Programming excites me in the same way. Never will I run out of things to learn or puzzles to solve.</p>
+                    <p class="large text-muted">Feel free to <a class="inline-link" href="mailto:jennilynhowell@me.com?subject=Hey%20Jennilyn,%20I%20was%20on%20your%20portfolio%20site">contact me</a> if I can support your business, whether as a developer or contractor. I look forward to hearing from you!</p>
 
                 </div>
             </div>
@@ -339,7 +418,8 @@
 
     <!-- Portfolio Modals -->
 
-    <div th:each="project: ${projects}" class="portfolio-modal modal fade" th:id="'portfolioModal' + ${project.id}" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Modal 1: Gabble -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -350,18 +430,185 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 offset-lg-2">
+                        <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2 th:text="${project.title}"></h2>
-                                <p class="item-intro text-muted" th:text="${project.subheader}"></p>
-                                <img class="img-fluid d-block mx-auto" th:src="${project.largeUrl}" alt=""/>
-                                <p th:text="${project.description}"></p>
-                                <ul class="list-inline">
-                                    <li><a th:if="${project.liveUrl}" th:href="${project.liveUrl}" target="_blank">View Live</a></li>
-                                    <li><a th:href="${project.gitUrl}" target="_blank">View Code</a></li>
-                                    <li th:text="${project.monthCreated}"></li>
-                                    <li>Category: <span th:text="${project.category}"> </span></li>
+                                <h2>Gabble</h2>
+                                <p class="item-intro text-muted">pseudo-twitter</p>
+                                <img class="img-responsive img-centered" alt="" src="assets/img/portfolio/Gabble-large.png"/>
+                                <p>This was my first real Node project that required a persistent data structure. I utilized one:many and many:many relationships in a PostgreSQL database (Sequelize). A user can create a login, share a "gab", like others' gabs, and delete his own gabs.</p>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://github.com/jennilynhowell/week-six-project" target="_blank">View Code</a></li>
+                                    <li>Completed: June 2017</li>
+                                    <li>Category: Node</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Songbird -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Songbird</h2>
+                                <p class="item-intro text-muted">search for and play a song</p>
+                                <img class="img-responsive img-centered" alt="" src="assets/img/portfolio/Songbird-large.png"/>
+                                <p>This app is connected to the SoundCloud API using JQuery. Feel free to search for and play your favorite song!</p>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://jennilynhowell.github.io/week-four-project/">View Live</a></li>
+                                    <li><a href="https://github.com/jennilynhowell/week-four-project" target="_blank">View Code</a></li>
+                                    <li>Completed: June 2017</li>
+                                    <li>Category: JQuery</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: CodeTrapper -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>CodeTrapper</h2>
+                                <p class="item-intro text-muted">store your code snippets</p>
+                                <img class="img-responsive img-centered" alt="" src="assets/img/portfolio/CodeTrapper-large.png"/>
+                                <p>This app is connected to the SoundCloud API using JQuery. Feel free to search for and play your favorite song!</p>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://hidden-cove-46175.herokuapp.com/app/user/login">View Live</a></li>
+                                    <li><a href="https://github.com/jennilynhowell/week-eight-snippets" target="_blank">View Code</a></li>
+                                    <li>Completed: July 2017</li>
+                                    <li>Category: Node</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: PantherBank -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>PantherBank</h2>
+                                <p class="item-intro text-muted">java atm app</p>
+                                <img class="img-responsive img-centered" alt="" src="assets/img/portfolio/atm-large.png"/>
+                                <p>One of my first Java programs. The user can view his account balance, make a transaction (withdrawal or deposit), and enjoy some goofy cat puns.</p>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://github.com/jennilynhowell/10.3-sql-atm" target="_blank">View Code</a></li>
+                                    <li>Completed: July 2017</li>
+                                    <li>Category: Java</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Mystery Word -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Mystery Word</h2>
+                                <p class="item-intro text-muted">hangman-style game</p>
+                                <img class="img-responsive img-centered" alt="" src="assets/img/portfolio/MysteryWord-large.png"/>
+                                <p>This was a really fun project -- I enjoyed the challenge of getting the computer to generate a word, then changing the display based on the word and user guesses. There is no auth but the user is required to enter his name and select a difficulty level.</p>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://github.com/jennilynhowell/week-five-project" target="_blank">View Code</a></li>
+                                    <li>Completed: June 2017</li>
+                                    <li>Category: Node</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: GitHub Remixed -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>GitHub Remixed</h2>
+                                <p class="item-intro text-muted">recreaction of my github profile</p>
+                                <img class="img-responsive img-centered" alt="" src="assets/img/portfolio/gh-large.png"/>
+                                <p>Front-end project utilizing Bootstrap and Fetch calls to the GitHub API.</p>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://jennilynhowell.github.io/4.4-gh-profile/">View Live</a></li>
+                                    <li><a href="https://github.com/jennilynhowell/4.4-gh-profile" target="_blank">View Code</a></li>
+                                    <li>Completed: May 2017</li>
+                                    <li>Category: JavaScript, Bootstrap</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fa fa-times"></i> Close Project</button>
                             </div>
